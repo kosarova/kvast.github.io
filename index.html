@@ -20,15 +20,15 @@
         </nav>
         <p>Крафтовый квас <br> всему голова!</p>
     </header>
-    <main>
+    
         <section class="product">
             <h2>Новинки</h2>
             <div class="product__item">
                 <h3>Вахтёр</h3>
                 <table>
                     <tr>
-                        <td>Алк. &lt;</td>
-                        <td>1%</td>
+                        <td>Алк.</td>
+                        <td>&lt; 1%</td>
                     </tr>
                     <tr>
                         <td>Ккал</td>
@@ -47,11 +47,11 @@
                 <h3>Романтик</h3>
                 <table>
                     <tr>
-                        <th>Алк. &lt;</th>
-                        <td>0,5%</td>
+                        <td>Алк.</td>
+                        <td>&lt; 0,5%</td>
                     </tr>
                     <tr>
-                        <th>Ккал</th>
+                        <td>Ккал</td>
                         <td>27</td>
                     </tr>
                 </table>
@@ -66,15 +66,15 @@
         <section class="advantages-section">
             <ul class="adventages-list">
                 <li class="adventages-list__item">
-                    <h3>Варим сами</h3>
+                    <h2>Варим сами</h2>
                     <p>Вот этими самыми руками. Экспериментируем и творим, что хотим.</p>
                 </li>
                 <li class="adventages-list__item">
-                    <h3>Своё, родное</h3>
+                    <h2>Своё, родное</h2>
                     <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
                 </li>
                 <li class="adventages-list__item">
-                    <h3>Не экономим</h3>
+                    <h2>Не экономим</h2>
                     <p>Человек это то, что он ест и пьёт. У нас только качественные ингредиенты.</p>
                 </li>
             </ul>
@@ -134,14 +134,14 @@
                     <td>250 Р.</td>
                 </tr>
                 <tr>
-                    <td>Вахтёр<sup>Новинка</sup></td>
+                    <td>Вахтёр <sup>Новинка</sup></td>
                     <td>&lt; 1%</td>
                     <td>35</td>
                     <td>0,5 л</td>
                     <td>150 Р.</td>
                 </tr>
                 <tr>
-                    <td>Романтик<sup>Новинка</sup></td>
+                    <td>Романтик <sup>Новинка</sup></td>
                     <td>&lt; 0,5%</td>
                     <td>27</td>
                     <td>0,5 л</td>
@@ -172,8 +172,8 @@
                     <label for="email-field">Email:</label>
                     <input type="email" id="email-field" name="email">
                 </div>
-                <div class="order-form-group">
-                    <label for="quantity-field">Объём заказа:</label>
+                <div class="order-form-group"> 
+                    <label for="quantity-field">Объём заказа: <br/></label> 
                     <select name="quantity" id="quantity-field">
                         <option value="1">От 5 до 10 баррелей в неделю</option>
                     </select>
@@ -184,30 +184,38 @@
                 </div>
                 <div class="checkbox-area">
                     <label for="subscription-field">
-                        <input type="checkbox" name="subscription" id="subscription-field">
+                        <input type="checkbox" name="subscription" id="subscription-field" checked>
                         Я согласен получать квасную рассылку
                     </label>
                 </div>
                 <input type="submit" value="Отправить заказ" class="btn btn-buy">
             </form>
         </section>
-    </main>
-    <footer>
-        <img src="img/logo.png" alt="kvast lolo">
+    
+    <footer class="main-footer">
+       <div class="footer-top">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="kvast lolo">
+        </div>
         <ul class="site-nav">
             <li class="site-nav__item"><a href=#>История</a></li>
             <li class="site-nav__item"><a href=#>Производство</a></li>
             <li class="site-nav__item"><a href=#>Ассортимент</a></li>
             <li class="site-nav__item"><a href=#>Где купить</a></li>
         </ul>
-        <a href="#">Инстаграм</a>
-        <a href="#">Фейсбук</a>
-        <a href="#">Вконтакте</a>
-        <p>При перепечатке материалов ссылка на сайт обязательна!</p>
-        <a href="#">
-            <img src="img/htmlacademy.png" alt="htnlacademy">
-        </a>
-        <strong>Разработчик:</strong> <a href="#"> HTML Academy</a>
+       </div>
+       <div class="footer-bottom">
+           <div class="footer-web">
+                <a href="#">Инстаграм</a>
+                <a href="#">Фейсбук</a>
+                <a href="#">Вконтакте</a>
+           </div>
+            <p>При перепечатке материалов ссылка на сайт обязательна!</p>
+            <div class="footer-copyright">
+                <a href="#"><img src="img/htmlacademy.png" alt="htnlacademy"></a>
+                <b>Разработчик:</b><a href="#">HTML Academy</a>
+            </div>
+       </div>
     </footer>
 </body>
 
