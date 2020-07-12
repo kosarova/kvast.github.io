@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin:0;
+    line-height: 30px;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    color:black;
+    background-color: white;
+    min-width: 1040px;
+}
+.clearfix::after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+.container-small {
+    width:800px;
+    margin: 0 auto;
+}
+.container {
+    width: 1015px;
+    margin: 0 auto;
+}
+.main-header,
+.main-footer{
+    color:#363636;
+    background-color: #c3c3c3;
+}
+h2 {
+    font-size: 40px;
+    line-height: 61px;
+    text-transform: uppercase;
+}
+/*/////////HEADER/////////*/
+.main-header {
+    background: url('img/wheat-back.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    background-color: #ffcb78;
+}
+.main-navigation {
+    margin-bottom:125px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+}
+.main-navigation img {
+    width:140px;
+    height: 76px;
+}
+.main-header-logo {
+    filter: drop-shadow(0 0 20px black);
+}
+.site-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 600px;
+    list-style: none;
+    margin: 0;
+    margin-left:60px;
+    margin-top:10px;
+    padding: 15px 0 15px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.site-nav__item{
+    margin-right: 53px;
+
+}
+.site-nav__item:last-child {
+    margin-right: 0;
+}
+.site-nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+}
+.site-nav__item a:hover {
+    color:#ffcb78;
+    border-bottom: 1px solid white;
+}
+.site-nav__item a:active {
+    color: rgba(255,204,102, 0.3);
+    border-bottom: 1px solid white;    
+}
+.promo {
+    line-height: 70px;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+.promo p {
+    color:white;
+    text-decoration: none;
+}
+/*/////////PRODCT/////////////////*/
+.product  h3 {
+    font-size: 40px;
+    line-height: 61px;
+    text-transform: uppercase;
+}
