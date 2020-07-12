@@ -27,10 +27,41 @@ body {
     color:#363636;
     background-color: #c3c3c3;
 }
-h2 {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.section-name {
     font-size: 40px;
     line-height: 61px;
     text-transform: uppercase;
+    margin:0;
+    margin-bottom: 75px;
+    font-weight: bold;
+}
+.btn {
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid #834700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #834700;
+    font-weight: bold;
+    line-height: 20px;
+}
+.btn:hover {
+    color: #6b3b02;
+    border-color: #6b3b02;
+}
+.btn:active {
+    color: rgba(210,195,178,0.3);
+    border-color: rgba(210,195,178,0.3);
 }
 /*/////////HEADER/////////*/
 .main-header {
@@ -69,7 +100,7 @@ h2 {
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .site-nav__item{
-    margin-right: 53px;
+    margin-right: 54px;
 
 }
 .site-nav__item:last-child {
@@ -99,9 +130,87 @@ h2 {
     color:white;
     text-decoration: none;
 }
-/*/////////PRODCT/////////////////*/
-.product  h3 {
-    font-size: 40px;
-    line-height: 61px;
-    text-transform: uppercase;
+/*/////////NOVELTY/////////////////*/
+.novelty {
+    padding: 90px 0 0;
 }
+.novelty-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.novelty-name {
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.novelty-list__item {
+    box-sizing: border-box;
+    position: relative;
+    width: 400px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    margin-bottom: 100px;
+}
+.novelty-list__item:nth-child(2n) {
+    border-left:none;
+}
+.novelty-info-container {
+    position: absolute;
+    width:170px;
+    right:20px;
+    top:70px;
+}
+.novelty-info {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-collapse: collapse;
+}
+.novelty-info td {
+      border: 1px solid #e5e5e5;
+      min-width: 70px;
+      padding-left: 10px;
+}
+.novelty-img {
+    margin-bottom: 15px;
+}
+.novelty-description {
+  margin:0;
+  margin-bottom: 60px;  
+}
+.novelty-ordering {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn-more {
+    margin-right: 5px;
+}
+.btn-buy {
+    margin-right: auto;
+    color: #ffffff;
+    border-color: #834700;
+    background-color: #834700;
+}
+.btn-buy:hover {
+    border-color: #6a3900;
+    background-color: #6a3900;
+    color: white;
+}
+.btn-buy:active {
+    border-color: #6a3900;
+    background-color: #6a3900;
+    color: #a08874;
+}
+/*//////////ADVENTAGES/////////////*/
