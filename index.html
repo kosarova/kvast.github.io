@@ -188,46 +188,50 @@
             </div>
         </section>
         <section class="order">
+           <div class="container-small">
             <h2 class="section-name">Заказать</h2>
-            <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас
+            <p class="order-description">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас
                 сейчас. При заказе от 10 баррелей — скидка 10%.</p>
             <form action="/kvast-mail" class="order-form" method="post">
                 <div class="order-form-group">
                     <label for="fullname-field">Представьтесь:</label>
-                    <input type="text" id="fullname-field" name="fullname">
+                    <input class="text-input" type="text" id="fullname-field" name="fullname" placeholder="Как мы можем к вам обращаться">
                 </div>
-                <div class="clearfix">
-                    <div class="order-form-group order-form-group-left">
+                    <div class="order-form-group">
+                       <div class="order-form-group-half">
                         <label for="phone-field">Номер телефона:</label>
-                        <input type="tel" id="phone-field" name="phone">
-                    </div>
-                    <div class="order-form-group order-form-group-right">
+                        <input class="text-short-input" type="text" id="phone-field" name="phone" placeholder="+7 (XXX) XXX-XX-XX">
+                       </div>
+                       <div class="order-form-group-half">
                         <label for="add-phone-field">Доп. номер:</label>
-                        <input type="tel" name="add-phone" id="add-phone-field">
+                        <input class="text-short-input" type="text" name="add-phone" id="add-phone-field" placeholder="+7 (XXX) XXX-XX-XX">
+                       </div>
                     </div>
-                </div>
-                <div class="order-form-group order-email">
+                <div class="order-form-group">
                     <label for="email-field">Email:</label>
-                    <input type="email" id="email-field" name="email">
+                    <input class="text-input" type="email" id="email-field" name="email" placeholder="Ваша электронная почта">
                 </div>
                 <div class="order-form-group"> 
                     <label for="quantity-field">Объём заказа: <br/></label> 
-                    <select name="quantity" id="quantity-field">
-                        <option value="1">От 5 до 10 баррелей в неделю</option>
+                    <select class="text-input" name="quantity" id="quantity-field">
+                        <option value="1">От 1 до 2 баррелей в неделю</option>
+                        <option value="2">От 5 до 10 баррелей в неделю</option>
+                        <option value="3">От 11 до 20 баррелей в неделю</option>
                     </select>
                 </div>
-                <div class="order-form-group">
+                <div class="order-form-group add-textarea-margin">
                     <label for="message-field">Доп. комментарий:</label>
-                    <textarea name="message" id="message-field"></textarea>
+                    <textarea class="textarea-input" name="message" id="message-field" placeholder="Сообщите нам всё, что считаете нужным"></textarea>
                 </div>
                 <div class="checkbox-area">
-                    <label for="subscription-field">
-                        <input type="checkbox" name="subscription" id="subscription-field" checked>
-                        Я согласен получать квасную рассылку
-                    </label>
+                    <input class="visually-hidden input-checkbox" type="checkbox" name="subscription" id="subscription-field" checked>                    
+                    <label for="subscription-field">Я согласен получать квасную рассылку</label>
                 </div>
+            <div class="add-padding-for-btn-buy"> 
                 <input type="submit" value="Отправить заказ" class="btn btn-buy">
+            </div>
             </form>
+          </div>
         </section>
     </main>
     <footer class="main-footer">

@@ -63,6 +63,17 @@ body {
     color: rgba(210,195,178,0.3);
     border-color: rgba(210,195,178,0.3);
 }
+.btn,
+input,
+textarea,
+select {
+    overflow: visible;
+    font-size: 100%;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+}
 /*/////////HEADER/////////*/
 .main-header {
     background: url('img/wheat-back.jpg') no-repeat;
@@ -404,4 +415,123 @@ body {
 }
 .assortment-table td {
     padding: 15px 0;
+}
+/*///////////ORDER////////////*/
+.order {
+    padding: 90px 0 90px;
+    background-color: #ffcb78;
+}
+.order-description {
+  margin: 0;
+    margin-bottom: 60px;
+    color: #505050;
+}
+.order label {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.order-form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+.order-form input:placeholder-shown {
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.5;
+}
+.text-input {
+    box-sizing: border-box;
+   border: none;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 50px;
+    background-color: #e6b66c;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 20px;
+}
+.order-form-group-half {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.text-short-input {
+    box-sizing: border-box;
+   border: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    background-color: #e6b66c;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 20px;
+}
+.order-form-group-half:nth-child(2n) {
+    width: 345px;
+}
+.add-textarea-margin {
+    margin-bottom: 40px;
+}
+.order-form textarea:placeholder-shown {
+    color: #000000;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.textarea-input {
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 150px;
+    background-color: #e6b66c;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 20px;
+}
+.checkbox-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-left: 260px;
+    min-height: 36px;
+}
+.input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: -3px;
+    width: 36px;
+    height: 36px;
+    background-color: #e6b66c;
+}
+.checkbox-area label {
+    text-transform: uppercase;
+    font-weight: bold;
+     position: relative;
+}
+.input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -55px;
+    width: 30px;
+    height: 30px;
+    background-image: url(img/tick.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.add-padding-for-btn-buy {
+    padding-left: 200px;
 }
