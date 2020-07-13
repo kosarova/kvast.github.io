@@ -319,3 +319,55 @@ body {
 .history i a:active {
     color: #cab7a2;
 }
+/*/////////////ABOUT///////////////////*/
+.about {
+    background-color: #ede5d8;
+    padding: 90px 0 20px;
+}
+.about blockquote {
+    margin: 0;
+    margin-bottom: 70px;
+    position: relative;
+}
+.about-details {
+    margin: 0;
+    margin-bottom: 40px;
+    color: #505050;
+    width: 700px;
+}
+.about-details::before {
+    position: absolute;
+    content: "";
+    background-image: url(img/quotes.png);
+    background-repeat: no-repeat;
+    width:41px;
+    height: 31px;
+    left:-101px;
+}
+.about-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.about-info cite {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+}
+.btn-about {
+    color:rgba(165,160,151);
+    border-color: rgba(165,160,151);
+}
+.btn-about:hover {
+    color:white;
+    background-color:rgba(165,160,151) ;
+    border-color: rgba(165,160,151);
+}
+.btn-about:active {
+    color:#b5b2ad;
+    background-color:rgba(165,160,151) ;
+}
