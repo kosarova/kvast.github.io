@@ -1,3 +1,6 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 body {
     padding: 0;
     margin:0;
@@ -21,6 +24,7 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 .main-header,
 .main-footer{
@@ -534,4 +538,87 @@ select {
 }
 .add-padding-for-btn-buy {
     padding-left: 200px;
+}
+/*//////////FOOTER/////////*/
+.main-footer {
+    padding: 60px 0;
+    background-color: black;
+}
+.main-footer .container {
+    padding: 0 90px;
+}
+.footer-main-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;   
+}
+.footer-logo {
+    display: flex;
+    width: 225px;
+    justify-content: center;
+    margin-right: 85px;
+}
+.footer-site-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 100px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-web {
+    margin-right: 85px;
+    width: 225px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-web a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color: #1b1b1b;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inst-soc {
+    background-image: url(img/icon-insta.png);
+}
+.face-soc {
+    background-image: url(img/icon-fb.png);
+}
+.vk-soc {
+    background-image: url(img/icon-vk.png);
+    background-size: ;
+}
+.footer-copyright-text {
+    color: #888888;
+    font-size: 14px;
+    line-height: 22px;
+    width: 320px;
+    margin-right: auto;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 315px;
+}
+.copyright-logo {
+    width: 75px;
+    height: 75px;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-copyright span, 
+.footer-copyright a {
+    color: #888888;
+    text-decoration: none;
 }
