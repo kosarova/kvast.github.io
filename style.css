@@ -371,3 +371,37 @@ body {
     color:#b5b2ad;
     background-color:rgba(165,160,151) ;
 }
+/*//////////ASSORTMENT///////////////*/
+.assortment {
+    padding: 90px 0 90px;
+}
+.assortment-table th {
+    color:#999999;
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+.assortment-table {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    border-collapse: collapse;
+}
+.assortment-table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+.assortment-table th:first-child,
+.assortment-table td:first-child{
+    text-align: left;
+    width: 400px;
+}
+.assortment-table th,
+.assortment-table td {
+    width: 70px;
+}
+.assortment-table td:first-child {
+    font-weight: bold;
+}
+.assortment-table td {
+    padding: 15px 0;
+}
