@@ -6,7 +6,7 @@ body {
     font-family: "Arial", sans-serif;
     color:black;
     background-color: white;
-    min-width: 1040px;
+    min-width: 1200px;
 }
 .clearfix::after {
  content: "";
@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
 }
 .container {
-    width: 1015px;
+    width: 1200px;
     margin: 0 auto;
 }
 .main-header,
@@ -214,3 +214,108 @@ body {
     color: #a08874;
 }
 /*//////////ADVENTAGES/////////////*/
+
+.advantages {
+    background-color: #ffcb78;
+}
+
+.adventages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.adventages-list__item {
+    position: relative;
+    padding: 80px 90px;
+    width: 400px;
+}
+.adventages-list__item::before {
+    content: "";
+    position: static;
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 30px;
+}
+.first-item::before {
+    background-image: url('img/icon-brew.png');
+    background-repeat: no-repeat;
+}
+.second-item::before {
+    background-image: url(img/icon-matreshka.png);
+    background-repeat: no-repeat;
+}
+.third-item::before {
+    background-image: url(img/icon-thumbsup.png);
+    background-repeat: no-repeat;
+}
+.adventages-list__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    height: auto;
+    width: 1px;
+    background-color: #e7b66a;
+    margin: 85px 0;
+}
+.adventages-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.adventages-list__item p {
+    margin: 0;
+    color: #505050;
+}
+/*///////////HISTORY////////////*/
+.history {
+    padding: 90px 0 20px;
+}
+.history dl {
+    margin: 0;
+}
+.history dt,
+.history dd {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+}
+.history dt {
+    margin-bottom: 20px;
+}
+.history h3 {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-right: auto;
+    width: 500px;
+}
+.history dd {
+    flex-direction: row-reverse;
+    margin-bottom: 70px;
+}
+.history p {
+    width: 500px;
+    margin: 0;
+    margin-right: auto;
+}
+.history i a {
+    color:#834700;
+}
+.history i a:hover {
+    color:#6a3900;
+}
+.history i a:active {
+    color: #cab7a2;
+}
